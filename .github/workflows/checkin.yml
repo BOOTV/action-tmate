@@ -1,8 +1,8 @@
 name: Ubuntu
-on: [push]
+on: push
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Debug Session
-      uses: csexton/debugger-action@master
+    - name: SSH connection to Actions
+      uses: mxschmitt/action-tmate
